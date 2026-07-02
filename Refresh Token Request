@@ -1,0 +1,3 @@
+POST /refresh
+
+Authorization: Bearer YOUR_REFRESH_TOKEN
