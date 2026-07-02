@@ -1,0 +1,48 @@
+🧠 Why This Is Important
+
+Instead of forcing users to log in repeatedly, applications use short-lived access tokens and long-lived refresh tokens.
+
+Authentication flow:
+User Login
+      │
+      ▼
++--------------------+
+| Access Token       | (15 min)
++--------------------+
+          │
+          ▼
+ API Request
+
+When the access token expires:
+Expired Access Token
+          │
+          ▼
+Refresh Token
+          │
+          ▼
+New Access Token
+
+Benefits:
+✅ Better security
+✅ Longer user sessions
+✅ Reduced login prompts
+✅ Standard JWT practice
+
+Used By :
+Google
+GitHub
+Microsoft
+Spotify
+Most modern REST APIs
+
+🛠 Tech Stack
+Python
+Flask
+Flask-JWT-Extended
+
+📂 Project Structure
+refresh-token-api/
+│
+├── app.py
+├── requirements.txt
+└── README.md
